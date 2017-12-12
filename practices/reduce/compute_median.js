@@ -6,7 +6,7 @@ function compute_median(collection) {
     if (num.length % 2 === 0) {
         return (parseInt(num[num.length / 2]) + parseInt(num[num.length / 2 - 1])) / 2;
     } else {
-        return parseInt(num[Math.ceil(num.length / 2)]);
+        return parseInt(num[Math.floor(num.length / 2)]);
     }
 }
 
