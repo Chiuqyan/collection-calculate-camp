@@ -2,8 +2,10 @@
 
 function hybrid_operation_to_uneven(collection) {
 
-  //在这里写入代码
+    //在这里写入代码
+    let odd = collection.filter(item => item % 2 !== 0);
+    let res = odd.map(item => item * 3 + 2);
+    return res;
 }
 
 module.exports = hybrid_operation_to_uneven;
-
