@@ -10,7 +10,7 @@ var calculate_median = function(collection) {
     if (even.length % 2 === 0) {
         return Math.ceil((parseInt(num[even.length / 2]) + parseInt(num[even.length / 2 - 1])) / 2);
     } else {
-        return parseInt(ascRank[Math.floor(even.length / 2)]);
+        return parseInt(num[Math.floor(even.length / 2)]);
     }
 
 };
