@@ -8,6 +8,8 @@ function spilt_to_zero(number, interval) {
         res.push(parseFloat(answer.toFixed(1)));
         answer -= interval;
     }
+    if (answer <= 0 && number % interval !== 0)
+        res.push(parseFloat(answer.toFixed(1)));
 
     return res;
 }
